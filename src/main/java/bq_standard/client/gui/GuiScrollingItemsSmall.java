@@ -6,6 +6,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.Loader;
 import net.minecraftforge.oredict.OreDictionary;
 import org.lwjgl.opengl.GL11;
 import betterquesting.api.client.gui.GuiElement;
@@ -161,6 +162,16 @@ public class GuiScrollingItemsSmall extends GuiScrollingBase<GuiScrollingItemsSm
 		public void onMouseClick(int mx, int my, int px, int py, int click, int index)
 		{
 			// JEI/NEI support here
+			if(stack != null && isWithin(mx, my, px + 1, py + 1, 16, 16))
+			{
+				if(Loader.isModLoaded("NotEnoughItems"))
+		     	{
+		 			try
+		 			{
+		 				codechicken.nei.recipe.GuiCraftingRecipe.openRecipeGui("item", stack.getBaseStack());
+		 			} catch(Exception e){}
+		 		}
+		 	}
 		}
 
 		@Override
