@@ -100,10 +100,12 @@ public class GuiTaskRetrieval extends GuiElement implements IGuiEmbedded
 	@Override
 	public void onMouseScroll(int mx, int my, int scroll)
 	{
+		scrollList.onMouseScroll(mx, my, scroll);
 	}
 
 	@Override
 	public void onKeyTyped(char c, int keyCode)
 	{
+		scrollList.onKeyTyped(c, keyCode);
 	}
 }
