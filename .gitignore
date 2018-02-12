@@ -212,3 +212,8 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+.gradle/
+*.bat
+Standart-Expansion.iws
+Standart-Expansion.ipr
+Standart-Expansion.iml
