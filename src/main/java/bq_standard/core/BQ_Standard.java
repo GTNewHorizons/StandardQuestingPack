@@ -50,9 +50,9 @@ import net.minecraftforge.common.config.Configuration;
 @Mod(modid = BQ_Standard.MODID, version = BQ_Standard.VERSION, name = BQ_Standard.NAME, guiFactory = "bq_standard.handlers.ConfigGuiFactory")
 public class BQ_Standard {
 	public static final String MODID = "bq_standard";
-	public static final String VERSION = "1.0.108";
-	public static final String HASH = "1abdcd597962f4e3e00e2f01b4623bee44e3791d";
-	public static final String BRANCH = "1.7.10";
+	public static final String VERSION = "CI_MOD_VERSION";
+	public static final String HASH = "CI_MOD_HASH";
+	public static final String BRANCH = "CI_MOD_BRANCH";
 	public static final String NAME = "Standard Expansion";
 	public static final String PROXY = "bq_standard.core.proxies";
 	public static final String CHANNEL = "BQ_STANDARD";
